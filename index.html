@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>hi sgrey, be my valentine.</title>
+  <title>hi sgrey</title>
 
   <!-- Confetti library -->
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
@@ -62,13 +62,13 @@
       margin: 12px 0 18px;
     }
 
-    .button-zone {
-      position: relative;
-      width: min(520px, 92%);
-      height: 150px;
-      margin: 0 auto;
-      touch-action: none;
-    }
+   .button-zone {
+  position: relative;
+  width: min(520px, 92%);
+  min-height: 200px;  /* ✅ Use min-height instead */
+  margin: 0 auto;
+  touch-action: none;
+}
 
     button {
       position: absolute;
@@ -300,6 +300,7 @@
   </script>
 </body>
 </html>
+
 
 
 
