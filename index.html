@@ -20,15 +20,15 @@
     * { box-sizing: border-box; }
 
     body {
-      margin: 0;
-      min-height: 100svh;
-      display: grid;
-      place-items: center;
-      background: radial-gradient(circle at top, var(--bg2), var(--bg1));
-      font-family: system-ui, sans-serif;
-      overflow: hidden;
-      padding: 16px;
-    }
+  margin: 0;
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle at top, var(--bg2), var(--bg1));
+  font-family: system-ui, sans-serif;
+  /* overflow: hidden; ❌ Remove this line */
+  padding: 16px;
+}
 
     /* FULL-SCREEN CONFETTI CANVAS */
     #confettiCanvas {
@@ -41,14 +41,14 @@
     }
 
     .card {
-      width: min(720px, 92vw);
-      padding: 26px 22px;
-      background: var(--card);
-      backdrop-filter: blur(10px);
-      border-radius: 22px;
-      text-align: center;
-      box-shadow: 0 18px 60px rgba(0,0,0,.15);
-    }
+  width: min(720px, 92vw);
+  padding: 26px 22px 40px;  /* Increased bottom padding */
+  background: var(--card);
+  backdrop-filter: blur(10px);
+  border-radius: 22px;
+  text-align: center;
+  box-shadow: 0 18px 60px rgba(0,0,0,.15);
+}
 
     .art {
       width: min(260px, 80vw);
@@ -300,6 +300,7 @@
   </script>
 </body>
 </html>
+
 
 
 
